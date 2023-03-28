@@ -9,7 +9,7 @@ metadata:
 spec:
   containers:
   - name: web-container
-    image: udaysha10/web:v1
+    image: udaysha10/web:k8
     imagePullPolicy: Always
     ports:
     - containerPort: 80
