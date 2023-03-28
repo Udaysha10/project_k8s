@@ -13,13 +13,13 @@ spec:
     imagePullPolicy: Always
     ports:
     - containerPort: 80
-  resources:
-    requests:
-      cpu: "150m"
-      memory: "128Mi"
-    limits:
-      cpu: "500m"
-      memory: "200Mi"
+    resources:
+      requests:
+        cpu: "150m"
+        memory: "128Mi"
+      limits:
+        cpu: "500m"
+        memory: "200Mi"
 ---
 apiVersion: v1 
 kind: Service
@@ -31,8 +31,8 @@ spec:
     tire: frontend
     name: web
   ports:
-    - protocal: TCP
-      port: 80
-      targetPort: 80
+   - protocal: TCP
+     port: 80
+     targetPort: 80
 
 
