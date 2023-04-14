@@ -16,7 +16,7 @@ metadata:
 spec:
   containers:
   - name: cart-container
-    image: udaysha10/cart:v1
+    image: udaysha10/cart:k8
     imagePullPolicy: Always
     envFrom:
     - configMapRef:
