@@ -16,7 +16,7 @@ metadata:
 spec:
   containers:
   - name: user
-    image: udaysha10/user:v1
+    image: udaysha10/user:k8
     imagePullPolicy: Always
     ports:
     - containerPort: 80
