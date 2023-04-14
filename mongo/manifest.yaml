@@ -9,7 +9,7 @@ metadata:
 spec:
   containers:
   - name: mongodb-container
-    image: udaysha10/mongodb:v1
+    image: udaysha10/mongodb:k8
     imagePullPolicy: Always
     ports:
     - containerPort: 27017
