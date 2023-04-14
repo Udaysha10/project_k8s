@@ -4,7 +4,7 @@ kind: ConfigMap
 metadata:
   name: payment-config
 data:
-  CART_HOST: "cart"
+  CART_HOST: "cart:80"
   AMQP_HOST: "rabbitmq"
   USER_HOST: "user"
 
