@@ -19,7 +19,7 @@ spec:
     image: udaysha10/cart:v1
     imagePullPolicy: Always
     envFrom:
-      configMapRef:
+    - configMapRef:
         name: cart-config
     ports:
     - containerPort: 8080
