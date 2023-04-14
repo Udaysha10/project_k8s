@@ -24,7 +24,7 @@ metadata:
 spec: 
   containers:
   - name: mysql
-    image: mysql
+    image: udaysha10/mysql:v1
     imagePullPolicy: Always
     envFrom:
     - configMapRef:
