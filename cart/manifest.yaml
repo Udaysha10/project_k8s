@@ -15,7 +15,7 @@ metadata:
     tier: app
 spec:
   containers:
-  - name: cart
+  - name: cart-container
     image: udaysha10/cart:v1
     imagePullPolicy: Always
     envFrom:
