@@ -9,17 +9,11 @@ metadata:
 spec:
   containers:
   - name: mongodb-container
-    image: udaysha10/mongodb:k8
+    image: udaysha10/mongodb:v1
     imagePullPolicy: Always
     ports:
     - containerPort: 27017
-    resources:
-      requests:
-        cpu: "150m"
-        memory: "128Mi"
-      limits:
-        cpu: "500m"
-        memory: "200Mi"
+    
 ---
 apiVersion: v1 
 kind: Service
@@ -31,7 +25,7 @@ spec:
     name: mongodb
   ports:
    - protocol: TCP
-     port: 80
+     port: 27017
      targetPort: 27017
 
 
