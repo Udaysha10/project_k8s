@@ -15,6 +15,7 @@ metadata:
   name: payment-pod
   labels:
     tier: app
+    name: payment 
 spec:
   containers:
   - name: payment

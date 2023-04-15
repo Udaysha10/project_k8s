@@ -13,10 +13,11 @@ metadata:
   name: shipping-pod
   labels:
     tier: app
+    name: shipping 
 spec:
   containers:
   - name: shipping
-    image: techworldwithsiva/shipping:k8
+    image: udaysha10/shipping:k8
     imagePullPolicy: Always
     envFrom:
     - configMapRef:
@@ -29,6 +30,7 @@ metadata:
 spec:
   selector:
     tier: app
+    name: shipping
   ports:
    - protocol: TCP
      port: 80

@@ -5,7 +5,7 @@ metadata:
   name: cart-config
 data:
   REDIS_HOST: "redis"
-  CATALOGUE_HOST: "http://catalogue"
+  CATALOGUE_HOST: "catalogue"
 ---
 apiVersion: v1
 kind: Pod
@@ -13,10 +13,11 @@ metadata:
   name: cart-pod
   labels:
     tier: app
+    name: cart 
 spec:
   containers:
   - name: cart-container
-    image: techworldwithsiva/cart:k8
+    image: udaysha10/cart:k8
     imagePullPolicy: Always
     envFrom:
     - configMapRef:
@@ -30,6 +31,7 @@ metadata:
 spec:
   selector:
     tier: app
+    name: cart 
   ports:
    - protocol: TCP
      port: 80
