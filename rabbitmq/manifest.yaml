@@ -5,6 +5,7 @@ metadata:
   name: rabbitmq-pod
   labels: 
     tier: db
+    name: rabbitmq
 spec:
   containers: 
   - name: rabbitmq
@@ -21,6 +22,7 @@ metadata:
 spec:
   selector:
     tier: db
+    name: rabbitmq
   ports:
     - port: 5672
       name: amqp

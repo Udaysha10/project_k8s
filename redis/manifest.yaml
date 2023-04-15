@@ -4,6 +4,7 @@ metadata:
   name: redis
   labels:
     tier: db
+    name: redis
 spec:
   containers:
   - name: redis
@@ -19,6 +20,7 @@ metadata:
 spec:
   selector:
     tier: db
+    name: redis
   ports: 
    - protocol: TCP
      port: 6379
