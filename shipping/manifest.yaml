@@ -16,7 +16,7 @@ metadata:
 spec:
   containers:
   - name: shipping
-    image: udaysha10/shipping:v1
+    image: techworldwithsiva/shipping:k8
     imagePullPolicy: Always
     envFrom:
     - configMapRef:
