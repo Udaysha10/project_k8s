@@ -3,7 +3,7 @@ kind: ClusterConfig
 
 metadata:
   name: k8scluster1
-  region: us-east-1
+  region: us-east-1a
 
 managedNodeGroups:
 
