@@ -22,6 +22,7 @@ metadata:
   name: mysql-pod
   labels:
     tier: db
+    name: mysql
 spec: 
   containers:
   - name: mysql
@@ -42,6 +43,7 @@ metadata:
 spec:
   selector:
     tier: db
+    name: mysql
   ports:
    - protocol: TCP
      port: 3306
